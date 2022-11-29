@@ -1,0 +1,41 @@
+.promo{
+  background: url(./../../images/panda.png);
+  background-position: center 0%;
+  position: relative;
+  top:-80px;
+  background-size: cover;
+  height: 780px;
+  display: block;
+}
+.promo__wrapper{
+  position: relative;
+}
+.promo-block{
+  position: absolute;
+  top:92px;
+  right: 108px;
+}
+.circle{
+  width: 465px;
+  height: 465px;
+  background: $color-hover;
+  border-radius: 50%;
+ 
+}
+.circle__text{
+  @include font($size: 10.6rem, $height: 8rem, $weight:700);
+  color: #FFFFFF;
+  text-transform: uppercase;
+  position: relative;
+  top:75px;
+  left: 85px;
+  text-align: center;
+  & .text{
+    color: $color-text;
+  }
+}
+.promo__button{
+  position: relative;
+  top:69px;
+  left: 175px;
+}

@@ -1,0 +1,46 @@
+.header{
+  background: $background-header;
+  color:$color-font-header;
+  position: relative;
+  z-index: 1;
+  @include font($size: 1.6rem, $height: 2.2rem, $weight:500);
+  padding: 14px 0 ;
+  & > * a{
+    color: $color-font-header;
+  }
+}
+
+.menu-block{
+  display: flex;
+  align-items: center;
+}
+.logo-block{
+  margin-right: 63px;
+  width:82px;
+  height: 52px;
+  padding: 3.5px 4.75px;
+  text-align: center;
+  border: 1px solid $color-font-header;
+  position: relative;
+  border-radius: 2px;
+  & >*a{
+    @include font($size: 1.9rem, $height: 2.3rem);
+  }
+  & > * img{
+    position: absolute;
+    left:10px;
+  }
+}
+.nav-ul{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  &  li:not(:last-child){
+    padding-right: 58px;
+  }
+  li .active{
+    background:$color-hover;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+  }
+}
