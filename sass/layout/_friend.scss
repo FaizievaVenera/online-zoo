@@ -16,6 +16,7 @@
     text-align: center;
     color: $color-friend-h2;
     margin-bottom: 30px;
+    margin-left: -35px;
 }
 .friend__title{
     @include font($size: 2.4rem, $height: 2.9rem);
@@ -24,4 +25,62 @@
     @include font($size: 1.6rem, $height: 2.1rem, $weight:500);
     margin-top:40px;
     margin-bottom: 10px;
+}
+.friend__support{
+    width:  863px;
+    @include font($size: 1.6rem, $height: 2.1rem, $weight:400);
+
+}
+.friend__h3{
+    text-align: center;
+    margin-top: 58px;
+    margin-bottom: 40px;
+    margin-left: -45px;
+}
+.friend__stages{
+    display: flex;
+    justify-content: center;
+}
+.stage-block{
+    width: 764px;
+    display: flex;
+    justify-content: space-between;
+    //align-items: center;
+    margin-bottom: 30px;
+    margin-right: 45px;
+}
+.friend-arrow{
+    margin-top: 60px;
+}
+.stage{
+    width: 168px;
+    height: 168px;
+    border-radius:5px;
+    border: 1px solid transparent;
+    background: linear-gradient(113.96deg, #f9804b 1.49%, #fe9013 101.44%);
+    
+}
+.stage__img{
+    background: $color-font-header;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 166px;
+    height: 166px;
+    border-radius:5px;
+}
+.stage img{
+ 
+    background: $color-font-header;
+}
+.stage-text{
+    margin-top: 30px;
+    width: 168px;
+    @include font($size: 1.6rem, $height: 2.2rem);
+}
+.friend__button{
+margin-top:34px ;
+    margin-left: auto;
+    margin-right: 375px;
+    
 }

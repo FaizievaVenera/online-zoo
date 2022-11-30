@@ -23,8 +23,9 @@
   border: 1px solid $color-font-header;
   position: relative;
   border-radius: 2px;
-  & >*a{
+  & a{
     @include font($size: 1.9rem, $height: 2.3rem);
+    color: $color-font-header;
   }
   & > * img{
     position: absolute;

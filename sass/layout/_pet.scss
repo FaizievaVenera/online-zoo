@@ -13,8 +13,8 @@
     left: 0px;
 }
 .pets__wrapper{
-width: 1324px;
-margin: 0 auto;
+    width: 1324px;
+    margin: 0 auto;
 }
 
 .pets-block{
@@ -41,7 +41,7 @@ margin: 0 auto;
     transform: rotate(180deg);
 }
 .pet-block{
-    width: 1160px;
+    width: 1155px;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
@@ -50,25 +50,23 @@ margin: 0 auto;
 }
 .about-pet{
     display: block;
-    width:366px;
-    height: 430px;
+    width:364px;
+    height: 427px;
     border-radius:5px;
     border: 1px solid transparent;
     background: linear-gradient(113.96deg, #f9804b 1.49%, #fe9013 101.44%);
     
-   
-    
 }
 
 .pet__img img{
-    width: 364px;
+    width: 362px;
     height: 366px;
     border-radius: 5px 5px 0 0;
     
 }
 .pet__desc{
     background-color: $color-font-header;
-    padding: 8px 12px 14px 16px;
+    padding: 7px 12px 13px 16px;
     display: flex;
     justify-content: space-between;
     border-radius:0 0 5px 5px;
@@ -76,6 +74,7 @@ margin: 0 auto;
 .pet__text{
     & p{
         @include font($size: 1.5rem, $height: 1.8rem, $weight:300);
+        margin-top: -1px;
     }
 }
 

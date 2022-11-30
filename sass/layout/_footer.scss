@@ -1,0 +1,83 @@
+.footer{
+  background: $background-footer;
+  color:$color-font-header;
+}
+.footer__wrapper{
+padding: 40px 0 50px 0;
+display: flex;
+max-width: 100%;
+justify-content: space-between;
+flex-wrap: wrap;
+
+}
+.block-donate{
+  width: 60%;
+}
+.button-footer{
+margin-top: 68px;
+margin-bottom: 44px;
+}
+
+.footer-links > * a{
+  @include font($size: 1.6rem, $height: 2.2rem);
+  color: $color-font-header;
+}
+
+.menu-item{
+  @include font($size: 1.6rem, $height: 2.2rem);
+
+}
+.footer__input{
+  width: 228px;
+  margin-top: 14px;
+  margin-right:10px;
+  border: 1px solid $border-input;
+  padding: 10px 0 10px 10px;
+  background: $background-footer;
+  border-radius: 2px;
+  cursor: pointer;
+  @include font($size: 1.6rem, $height: 2.2rem);
+  color:$color-input;
+}
+.footer-menu,.block-designer{
+  display: flex;
+  align-items: flex-end;
+}
+ .block-designer a{
+  color:$color-font-header;
+  @include font($size: 1.6rem, $height: 2.1rem, $weight: 100);
+  
+}
+.social{
+  margin-top: 10px;
+  & a{
+    display: flex;
+  text-align: center;
+  }
+}
+
+.footer-links > * li i {
+	margin-right: 20px;
+}
+.social span:nth-child(2){
+  margin-left: 10px;
+
+}
+.social span:nth-child(1){
+  display: inline-block;
+  border-radius: 100%;
+  width: 26px;
+  height: 26px;
+  
+  background: $background-social;
+  & img{
+    display: block;
+    margin: 6px auto;
+  }
+}
+.footer-links .social:hover .social-media{
+color: $border-input;
+}
+.footer-links .social:hover .social-span{
+  background: $border-input;
+  }

@@ -1,0 +1,21 @@
+.testim{
+  margin-top: 140px;
+}
+.testim__h3{
+  color:$color-background;
+  margin-bottom: 47px;
+  text-align: center;
+}
+.testim__blocks{
+  display: flex;
+  justify-content: space-between;
+}
+.testim_block{
+  background:$border-testim;
+  max-width: 100%;
+  flex-shrink: 0;
+  border-radius: 20px;
+  padding: 2px;
+  max-height: 391px;
+  padding: 13px 14px 20px 15px;
+}
