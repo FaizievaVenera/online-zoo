@@ -738,6 +738,12 @@ img {
   margin: 0 auto;
 }
 
+.donate__radio {
+  display: flex;
+  justify-content: center;
+  margin-top: 25px;
+}
+
 /*Components*/
 .button-link {
   background: linear-gradient(113.96deg, #F9804B 1.49%, #FE9013 101.44%);
@@ -805,4 +811,30 @@ input[type=range]::-webkit-slider-thumb {
 
 ​ input[type=range]::-webkit-slider-thumb:hover {
   background: url(./../../images/icons/roller_icon.png);
+}
+
+/**Donate page*/
+.donate__input {
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+}
+
+input[type=number] {
+  width: 268px;
+  height: 54px;
+  border: 1px solid #929699;
+  background: none, url(./../../images/icons/dollar.png) center left 97% no-repeat;
+  border-radius: 2px;
+  color: #929699;
+  padding: 16px 17px 16px 9px;
+  font-size: 1.6rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 2.1rem;
+  -moz-appearance: textfield;
+}
+input[type=number]::-webkit-outer-spin-button, input[type=number]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
 }/*# sourceMappingURL=style.css.map */

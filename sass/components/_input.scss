@@ -26,4 +26,28 @@ input[type="range"]::-webkit-slider-thumb {
   input[type="range"]::-webkit-slider-thumb:active {
    // transform: scale(1.6);
   }
+  /**Donate page*/
+  .donate__input{
+display: flex;
+justify-content: center;
+margin-top:50px;
+  }
+  input[type="number"]{
+    width: 268px;
+    height: 54px;
+    border: 1px solid $border-input-donate;
+    background: none, url(./../../images/icons/dollar.png) center left 97%  no-repeat;
+    border-radius: 2px;
+    color: $border-input-donate;
+    padding: 16px 17px 16px 9px;
+    @include font($size: 1.6rem, $height: 2.1rem, $weight:400);
+
   
+&::-webkit-outer-spin-button,
+&::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+  -moz-appearance: textfield;
+
+  }
