@@ -1,0 +1,29 @@
+input[type="range"] {
+  position: relative;
+  //right: 31px;
+  top:11px;
+  display: block;
+  margin-top: 4px;
+  -webkit-appearance: none;
+  background-color: #000;
+  width: 99%;
+  height: 0px;
+  margin: 0 auto;
+  outline: 0;
+}
+input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  background:url(./../../images/icons/roller_icon.png);
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  transition: .3s ease-in-out;
+}​
+  input[type="range"]::-webkit-slider-thumb:hover {
+    background:url(./../../images/icons/roller_icon.png);
+    
+  }
+  input[type="range"]::-webkit-slider-thumb:active {
+   // transform: scale(1.6);
+  }
+  

@@ -1,6 +1,8 @@
 .wrapper{
-  width: 1160px;
+  max-width: 1160px;
   margin: 0 auto;
+  padding-left: 30px;
+  padding-right: 30px;
 }
 .header__wrapper{
   display: flex;

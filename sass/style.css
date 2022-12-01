@@ -174,8 +174,10 @@ img {
 }
 
 .wrapper {
-  width: 1160px;
+  max-width: 1160px;
   margin: 0 auto;
+  padding-left: 30px;
+  padding-right: 30px;
 }
 
 .header__wrapper {
@@ -295,7 +297,7 @@ img {
 }
 
 .pets__wrapper {
-  width: 1324px;
+  max-width: 1324px;
   margin: 0 auto;
 }
 
@@ -405,7 +407,7 @@ img {
 }
 
 .friend__support {
-  width: 863px;
+  max-width: 863px;
   font-size: 1.6rem;
   font-style: normal;
   font-weight: 400;
@@ -504,9 +506,9 @@ img {
 }
 
 .footer__wrapper {
-  padding: 40px 0 50px 0;
+  padding: 40px 30px 50px 30px;
   display: flex;
-  max-width: 100%;
+  width: 100%;
   justify-content: space-between;
   flex-wrap: wrap;
 }
@@ -616,7 +618,7 @@ img {
   line-height: 2.2rem;
   padding-top: 10px;
   padding-bottom: 40px;
-  width: 1150px;
+  max-width: 1150px;
 }
 
 .donate__h3 {
@@ -630,55 +632,110 @@ img {
   background: rgba(255, 255, 255, 0.52);
   -webkit-backdrop-filter: blur(2px);
           backdrop-filter: blur(2px);
-  padding: 40px 92px 62px 92px;
+  padding: 40px 0 62px 0;
+  color: #333B41;
 }
 .donate-block h2 {
   color: #FE9013;
   text-align: center;
   margin-bottom: 20px;
 }
-.donate-block p {
+.donate-block .donate__text {
   font-size: 2.4rem;
   font-style: normal;
   font-weight: 400;
   line-height: 2.9rem;
 }
 
+.donate__text, .donate__amount {
+  padding-left: 92px;
+}
+
+.donate__amount {
+  font-size: 1.6rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 2.2rem;
+  color: #000000;
+  margin-bottom: 10px;
+}
+
+.donate-animal {
+  margin-top: 60px;
+  margin-bottom: 48px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.donate-animal p:first-child {
+  font-size: 7.2rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 5.8rem;
+  color: #000000;
+  margin-bottom: 11px;
+}
+.donate-animal p:nth-child(2) {
+  font-size: 1.6rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 2.2rem;
+  color: #000000;
+}
+.donate-animal .animal-count {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.donate-animal .multi {
+  margin-left: 11px;
+  margin-right: 64px;
+}
+
+.donate-input {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
 .range {
-  width: 976px;
+  width: 84%;
   height: 27px;
   background: #404950;
   position: relative;
-}
-
-input[type=range] {
-  position: absolute;
-  right: 31px;
-  top: 13px;
-  display: block;
-  margin-top: 4px;
-  -webkit-appearance: none;
-  background-color: #bdc3c7;
-  width: 915px;
-  height: 2px;
-  border-radius: 5px;
   margin: 0 auto;
-  outline: 0;
 }
 
-input[type=range]::-webkit-slider-thumb {
-  -webkit-appearance: none;
-  background: url(./../../images/icons/roller_icon.png);
-  width: 40px;
-  height: 40px;
-  cursor: pointer;
-  -webkit-transition: 0.3s ease-in-out;
-  transition: 0.3s ease-in-out;
+.range-input {
+  top: 13px;
+  width: 94%;
+  margin: 0 auto;
+  height: 2px;
+  background-color: #bdc3c7;
+  position: relative;
+  display: flex;
+  justify-content: center;
 }
 
-​ input[type=range]::-webkit-slider-thumb:hover {
-  background-color: white;
-  border: 2px solid #e74c3c;
+.range-markers {
+  position: absolute;
+  top: -5px;
+  width: 101.5%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.range-markers .marker {
+  position: relative;
+  background: #FFEE2E;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+}
+
+.input-number {
+  margin: 0 auto;
 }
 
 /*Components*/
@@ -721,4 +778,31 @@ input[type=range]::-webkit-slider-thumb {
   height: 42px;
   border-radius: 2px;
   border: 1px solid #4B9200;
+}
+
+input[type=range] {
+  position: relative;
+  top: 11px;
+  display: block;
+  margin-top: 4px;
+  -webkit-appearance: none;
+  background-color: #000;
+  width: 99%;
+  height: 0px;
+  margin: 0 auto;
+  outline: 0;
+}
+
+input[type=range]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  background: url(./../../images/icons/roller_icon.png);
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+}
+
+​ input[type=range]::-webkit-slider-thumb:hover {
+  background: url(./../../images/icons/roller_icon.png);
 }/*# sourceMappingURL=style.css.map */

@@ -27,7 +27,7 @@
     margin-bottom: 10px;
 }
 .friend__support{
-    width:  863px;
+    max-width:  863px;
     @include font($size: 1.6rem, $height: 2.1rem, $weight:400);
 
 }
