@@ -1,4 +1,4 @@
-.button-link{
+.button-link {
   background: $color-hover;
   width: 298px;
   height: 54px;
@@ -6,27 +6,39 @@
   justify-content: center;
   align-items: center;
   border-radius: 25px;
-  & a{
-   color:$color-font-header;
-   text-align: center;
-   text-transform: uppercase;
-   @include font($size: 1.6rem, $height: 2.2rem, $weight:500)
+  & a {
+    color: $color-font-header;
+    text-align: center;
+    text-transform: uppercase;
+    @include font($size: 1.6rem, $height: 2.2rem, $weight: 500);
   }
 }
-.button{
+.button-donate,
+.button {
+  @include font($size: 1.6rem, $height: 2.2rem, $weight: 500);
+}
+.button {
   background: $color-hover;
   color: $color-font-header;
   text-transform: uppercase;
-  @include font($size: 1.6rem, $height: 2.2rem, $weight:500);
   width: 298px;
   height: 54px;
   border-radius: 5px;
 }
-.button__submit{
+.button__submit {
   background-color: $background-button-submit;
   color: $color-submit;
   width: 129px;
   height: 42px;
   border-radius: 2px;
   border: 1px solid $color-submit;
+}
+.button-donate {
+  display: block;
+  background: $color-hover;
+  width: 298px;
+  height: 54px;
+  border-radius: 25px;
+  color: $color-font-header;
+  text-transform: uppercase;
 }
