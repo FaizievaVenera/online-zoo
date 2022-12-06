@@ -52,13 +52,46 @@
   height: 427px;
   border-radius: 5px;
   border: 1px solid transparent;
+  //transition: transform 1s;
   background: linear-gradient(113.96deg, #f9804b 1.49%, #fe9013 101.44%);
+  &:hover{
+    .pet__img img{
+    transform: scale(1.1);
+    filter: brightness(70%)
+    }
+    .pet__text{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        margin-left: 90px;
+        transition: transform 1s;
+        transform: translatey(-200px)  ;//translate(100px,-200px)
+        color: $color-font-header;
+        //transform: translateX(20px);
+  
+        }
+    .pet-img{
+        transition: transform 1s;
+        display: none;
+    }
+  }
+}
+.pet__img{
+    overflow: hidden;
+    background: $background-header;
 }
 
 .pet__img img {
   width: 362px;
   height: 366px;
   border-radius: 5px 5px 0 0;
+  transition: transform 1s;
+  &:hover{
+    transform: scale(1.1);
+    filter: brightness(70%)
+
+    //transition-duration:1s;
+  }
 }
 .pet__desc {
   background-color: $color-font-header;
@@ -72,6 +105,7 @@
     @include font($size: 1.5rem, $height: 1.8rem, $weight: 300);
     margin-top: -1px;
   }
+
 }
 
 .pets__button {

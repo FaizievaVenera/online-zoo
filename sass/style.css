@@ -164,6 +164,9 @@ img {
   flex-direction: row;
   align-items: center;
 }
+.nav-ul li {
+  cursor: pointer;
+}
 .nav-ul li:not(:last-child) {
   padding-right: 58px;
 }
@@ -341,11 +344,38 @@ img {
   border: 1px solid transparent;
   background: linear-gradient(113.96deg, #f9804b 1.49%, #fe9013 101.44%);
 }
+.about-pet:hover .pet__img img {
+  transform: scale(1.1);
+  filter: brightness(70%);
+}
+.about-pet:hover .pet__text {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-left: 90px;
+  transition: transform 1s;
+  transform: translatey(-200px);
+  color: #FFFFFF;
+}
+.about-pet:hover .pet-img {
+  transition: transform 1s;
+  display: none;
+}
+
+.pet__img {
+  overflow: hidden;
+  background: #000000;
+}
 
 .pet__img img {
   width: 362px;
   height: 366px;
   border-radius: 5px 5px 0 0;
+  transition: transform 1s;
+}
+.pet__img img:hover {
+  transform: scale(1.1);
+  filter: brightness(70%);
 }
 
 .pet__desc {
@@ -749,7 +779,6 @@ img {
   font-style: normal;
   font-weight: 500;
   line-height: 3.6rem;
-  background: url(./../../images/dollar.svg) left no-repeat;
   width: 96%;
   margin-top: 16px;
   margin-left: 15px;
@@ -757,6 +786,12 @@ img {
   justify-content: space-between;
   position: relative;
   top: 10px;
+}
+.range-labels li {
+  background: url(./../../images/dollar.svg) 0px no-repeat;
+}
+.range-labels > span {
+  margin-left: 10px;
 }
 
 .input-number {
@@ -792,6 +827,8 @@ img {
   justify-content: center;
   align-items: center;
   border-radius: 25px;
+  transition: 1s;
+  cursor: pointer;
 }
 .button-link a {
   color: #FFFFFF;
