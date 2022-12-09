@@ -1,4 +1,4 @@
-input[type="range"] {
+.input-donate {
   position: relative;
   //right: 31px;
   top: 11px;
@@ -11,7 +11,7 @@ input[type="range"] {
   margin: 0 auto;
   outline: 0;
 }
-input[type="range"]::-webkit-slider-thumb {
+.input-donate::-webkit-slider-thumb {
   -webkit-appearance: none;
   background: url(./../../images/icons/roller_icon.png);
   width: 40px;
@@ -19,10 +19,10 @@ input[type="range"]::-webkit-slider-thumb {
   cursor: pointer;
   transition: 0.3s ease-in-out;
 }
-​ input[type="range"]::-webkit-slider-thumb:hover {
+.input-donate::-webkit-slider-thumb:hover {
   background: url(./../../images/icons/roller_icon.png);
 }
-input[type="range"]::-webkit-slider-thumb:active {
+.input-donate::-webkit-slider-thumb:active {
   // transform: scale(1.6);
 }
 /**Donate page*/
@@ -94,4 +94,28 @@ input[type="number"] {
   input[type="radio"]:disabled
   + label:before {
   filter: grayscale(100%);
+}
+
+.input-range-test {
+  appearance: none !important;
+  -webkit-appearance: none;
+  width: 599px;
+  height: 8px;
+  margin: 0;
+  padding: 0;
+  opacity: 1;
+  outline: 0;
+  background: $background-button-submit;
+  background: $border-testim;
+
+  border: 1px solid rgba(0, 0, 0, 0);
+  border-radius: 20px;
+}
+.input-range-test::-webkit-slider-thumb {
+  appearance: none !important;
+  height: 6px;
+  width: 100px;
+  border-radius: 5px;
+  background-color: $color-friend-h2;
+  margin-bottom: 1px;
 }

@@ -1,23 +1,24 @@
 /*Abstracts*/
-@import './abstracts/constant';
-@import './abstracts/mixin';
-
+@import "./abstracts/constant";
+@import "./abstracts/mixin";
 
 /*Base*/
-@import './base/base';
-@import './base/reset';
+@import "./base/base";
+@import "./base/reset";
+@import "./base/transition";
 
 /*Layout*/
-@import './layout/header';
-@import './layout/wrapper';
-@import './layout/promo';
-@import './layout/backstage';
-@import './layout/pet';
-@import './layout/friend';
-@import './layout/testimonials';
-@import './layout/footer';
-@import './layout/info';
+@import "./layout/header";
+@import "./layout/wrapper";
+@import "./layout/promo";
+@import "./layout/backstage";
+@import "./layout/pet";
+@import "./layout/friend";
+@import "./layout/testimonials";
+@import "./layout/footer";
+@import "./layout/info";
+@import "./layout/layout";
 
 /*Components*/
-@import './components/button';
-@import './components/input'
+@import "./components/button";
+@import "./components/input";

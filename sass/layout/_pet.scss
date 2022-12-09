@@ -26,17 +26,28 @@
 .arrow {
   width: 62px;
   height: 62px;
-  //background: url(../../images/vector.png), $color-hover;
+  background: $color-hover;
   border-radius: 50%;
+  transition: all 0.6s;
+  &:hover {
+    background: $color-submit;
+  }
 }
 .arrow-left {
-  background: url(./../images/vector.png) no-repeat, $color-hover;
-  background-position: center center;
+  position: relative;
+  & img {
+    position: absolute;
+    top: 45%;
+    right: 35%;
+  }
 }
 .arrow-right {
-  background: url(./../images/vector.png) no-repeat, $color-hover;
-  background-position: center center;
   transform: rotate(180deg);
+  & img {
+    position: absolute;
+    top: 40%;
+    right: 35%;
+  }
 }
 .pet-block {
   width: 1155px;
@@ -54,31 +65,30 @@
   border: 1px solid transparent;
   //transition: transform 1s;
   background: linear-gradient(113.96deg, #f9804b 1.49%, #fe9013 101.44%);
-  &:hover{
-    .pet__img img{
-    transform: scale(1.1);
-    filter: brightness(70%)
+  &:hover {
+    .pet__img img {
+      transform: scale(1.1);
+      filter: brightness(70%);
     }
-    .pet__text{
-        display: flex;
-        align-items: center;
-        flex-direction: column;
-        margin-left: 90px;
-        transition: transform 1s;
-        transform: translatey(-200px)  ;//translate(100px,-200px)
-        color: $color-font-header;
-        //transform: translateX(20px);
-  
-        }
-    .pet-img{
-        transition: transform 1s;
-        display: none;
+    .pet__text {
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      margin-left: 90px;
+      transition: transform 1s;
+      transform: translatey(-200px); //translate(100px,-200px)
+      color: $color-font-header;
+      //transform: translateX(20px);
+    }
+    .pet-img {
+      transition: transform 1s;
+      display: none;
     }
   }
 }
-.pet__img{
-    overflow: hidden;
-    background: $background-header;
+.pet__img {
+  overflow: hidden;
+  background: $background-header;
 }
 
 .pet__img img {
@@ -86,9 +96,9 @@
   height: 366px;
   border-radius: 5px 5px 0 0;
   transition: transform 1s;
-  &:hover{
+  &:hover {
     transform: scale(1.1);
-    filter: brightness(70%)
+    filter: brightness(70%);
 
     //transition-duration:1s;
   }
@@ -105,7 +115,6 @@
     @include font($size: 1.5rem, $height: 1.8rem, $weight: 300);
     margin-top: -1px;
   }
-
 }
 
 .pets__button {

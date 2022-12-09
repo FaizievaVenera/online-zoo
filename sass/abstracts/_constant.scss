@@ -1,20 +1,58 @@
 $background-header: #000000;
-$color-font-header: #FFFFFF;
-$color-hover:linear-gradient(113.96deg, #F9804B 1.49%, #FE9013 101.44%);
-$color-text:#FFEE2E;
-$color-background:#333B41;
-$background-friend: linear-gradient(315.75deg, rgba(254, 210, 144, 0.7) 30.06%, #FEBDAB 100.95%, rgba(254, 210, 144, 0.7) 106.36%), linear-gradient(315.75deg, rgba(254, 189, 171, 0.74) 30.06%, rgba(243, 169, 248, 0.66) 50.74%, #E0D8F0 80.49%, #EAF7FE 127.9%, #EAF7FE 149.54%), linear-gradient(315.75deg, rgba(254, 189, 171, 0.74) 30.06%, rgba(243, 169, 248, 0.66) 50.74%, #E0D8F0 80.49%, #EAF7FE 127.9%, #EAF7FE 149.54%);
-$color-friend-h2: #FE9013;
-$background-section:rgba(253, 253, 255, 0.52);
+$color-font-header: #ffffff;
+$color-hover: linear-gradient(113.96deg, #f9804b 1.49%, #fe9013 101.44%);
+$color-text: #ffee2e;
+$color-background: #333b41;
+$background-friend: linear-gradient(
+    315.75deg,
+    rgba(254, 210, 144, 0.7) 30.06%,
+    #febdab 100.95%,
+    rgba(254, 210, 144, 0.7) 106.36%
+  ),
+  linear-gradient(
+    315.75deg,
+    rgba(254, 189, 171, 0.74) 30.06%,
+    rgba(243, 169, 248, 0.66) 50.74%,
+    #e0d8f0 80.49%,
+    #eaf7fe 127.9%,
+    #eaf7fe 149.54%
+  ),
+  linear-gradient(
+    315.75deg,
+    rgba(254, 189, 171, 0.74) 30.06%,
+    rgba(243, 169, 248, 0.66) 50.74%,
+    #e0d8f0 80.49%,
+    #eaf7fe 127.9%,
+    #eaf7fe 149.54%
+  );
+$color-friend-h2: #fe9013;
+$background-section: rgba(253, 253, 255, 0.52);
 $background-footer: #111115;
-$border-testim: linear-gradient(315.75deg, rgba(254, 189, 171, 0.74) 30.06%, rgba(243, 169, 248, 0.66) 50.74%, #e0d8f0 80.49%, #eaf7fe 127.9%, #eaf7fe 149.54%), linear-gradient(315.75deg, rgba(254, 189, 171, 0.74) 30.06%, rgba(243, 169, 248, 0.66) 50.74%, #e0d8f0 80.49%, #eaf7fe 127.9%, #eaf7fe 149.54%);
+$border-testim: linear-gradient(
+    315.75deg,
+    rgba(254, 189, 171, 0.74) 30.06%,
+    rgba(243, 169, 248, 0.66) 50.74%,
+    #e0d8f0 80.49%,
+    #eaf7fe 127.9%,
+    #eaf7fe 149.54%
+  ),
+  linear-gradient(
+    315.75deg,
+    rgba(254, 189, 171, 0.74) 30.06%,
+    rgba(243, 169, 248, 0.66) 50.74%,
+    #e0d8f0 80.49%,
+    #eaf7fe 127.9%,
+    #eaf7fe 149.54%
+  );
 $border-input: #f9804b;
 $color-input: #bdbdbd;
-$background-button-submit: #F1F3F2;
-$color-submit: #4B9200;
+$background-button-submit: #f1f3f2;
+$color-submit: #4b9200;
 $background-social: rgba(196, 196, 196, 0.5);
-$background-donate:rgba(255, 255, 255, 0.52);
+$background-donate: rgba(255, 255, 255, 0.52);
 $background-input: #404950;
-$background-range:#bdc3c7;
-$border-input-donate:#929699;
+$background-range: #bdc3c7;
+$border-input-donate: #929699;
 $background-button-hover: #e47209;
+$color-test: #767474;
+$background-test: #f5f7f6;

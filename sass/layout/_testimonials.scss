@@ -1,21 +1,35 @@
-.testim{
+.testim {
   margin-top: 140px;
 }
-.testim__h3{
-  color:$color-background;
+.testim__h3 {
+  color: $color-background;
   margin-bottom: 47px;
   text-align: center;
 }
-.testim__blocks{
+.testim__blocks {
   display: flex;
   justify-content: space-between;
+  margin-bottom: 21px;
 }
-.testim_block{
-  background:$border-testim;
+.testim_block {
+  background: $border-testim;
   max-width: 100%;
   flex-shrink: 0;
   border-radius: 20px;
   padding: 2px;
   max-height: 391px;
+  flex-shrink: 0;
+}
+.testimonial {
+  max-width: 264px;
+  width: 100%;
+  border-radius: 20px;
+  max-height: 391px;
   padding: 13px 14px 20px 15px;
+  background: $background-button-submit;
+}
+
+.testim__desc {
+  color: $color-test;
+  @include font($size: 1.5rem, $height: 1.8rem, $weight: 300);
 }

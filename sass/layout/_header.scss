@@ -1,50 +1,49 @@
-.header{
+.header {
   background: $background-header;
-  color:$color-font-header;
+  color: $color-font-header;
   position: relative;
   z-index: 1;
-  @include font($size: 1.6rem, $height: 2.2rem, $weight:500);
-  padding: 14px 0 ;
-  & > * a{
+  @include font($size: 1.6rem, $height: 2.2rem, $weight: 500);
+  padding: 14px 0;
+  & > * a {
     color: $color-font-header;
   }
 }
 
-.menu-block{
+.menu-block {
   display: flex;
   align-items: center;
 }
-.logo-block{
+.logo-block {
   margin-right: 63px;
-  width:82px;
+  width: 82px;
   height: 52px;
   padding: 3.5px 4.75px;
   text-align: center;
   border: 1px solid $color-font-header;
   position: relative;
   border-radius: 2px;
-  & a{
+  & a {
     @include font($size: 1.9rem, $height: 2.3rem);
     color: $color-font-header;
   }
-  & > * img{
+  & > * img {
     position: absolute;
-    left:10px;
+    left: 10px;
   }
 }
-.nav-ul{
+.nav-ul {
   display: flex;
   flex-direction: row;
   align-items: center;
-  li{
-
+  li {
     cursor: pointer;
   }
-  &  li:not(:last-child){
+  & li:not(:last-child) {
     padding-right: 58px;
   }
-  li .active{
-    background:$color-hover;
+  li .active {
+    background: $color-hover;
     -webkit-text-fill-color: transparent;
     -webkit-background-clip: text;
   }
