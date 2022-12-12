@@ -3,6 +3,8 @@
     padding-top: 69px;
     padding-bottom: 100px;
     color:$color-background;
+    padding-left: 30px;
+    padding-right: 30px;
 }
 .friend__wrapper{
     background: $background-section;
@@ -79,8 +81,19 @@
     @include font($size: 1.6rem, $height: 2.2rem);
 }
 .friend__button{
-margin-top:34px ;
+    margin-top:34px ;
     margin-left: auto;
-    margin-right: 375px;
+    margin-right: auto;
     
+}
+@media screen and (max-width: 800px){
+    .friend{
+        padding: 20px 0;
+
+    }
+    .friend__wrapper{
+        background: $background-section;
+        border-radius: 20px;
+        padding: 10px 20px 59px 20px;
+    }
 }

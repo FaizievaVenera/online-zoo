@@ -48,3 +48,8 @@
     -webkit-background-clip: text;
   }
 }
+@media screen and (max-width: 850px){
+ .nav,.link-block{
+  display: none;
+ } 
+}

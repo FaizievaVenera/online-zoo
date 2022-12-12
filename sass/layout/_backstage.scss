@@ -15,12 +15,21 @@
     display: flex;
     justify-content: space-between;
 }
+.backstage-img{
+    overflow: hidden;
+    //width: 45%;
+    background-position: center;
+    object-fit: cover;
+
+}
 .backstage-img img{
-    width: 609px;
+    overflow: hidden;
+    
 }
 .backstage-block{
-    width: 465px;
+    padding-left:31px;
     color:$color-background;
+    max-width:54%;
     margin-bottom: 175px;
     & p{
         @include font($size: 1.6rem, $height: 2.2rem);
@@ -32,4 +41,23 @@
 .backstage__h4{
     margin-top: 54px;
     margin-bottom: 34px;
+}
+
+@media screen and (max-width: 1500px){
+    .backstage__flower{
+        display: none;
+    }
+}
+@media screen and (max-width: 1200px){
+    .backstage-block{
+        margin-bottom: 142px;
+}
+}
+@media screen and (max-width: 950px){
+    .backstage-img img{
+        display: none;
+    }
+    .backstage-block{
+        max-width:100%;
+}
 }

@@ -37,3 +37,27 @@
   top: 69px;
   left: 175px;
 }
+
+@media screen and (max-width: 1200px) {
+  .promo {
+    height: 584px;
+  }
+  .promo__button {
+    top:40px;
+  }
+  .promo-block {
+    top: 69px;
+    left: calc(50% - 367px/2 + 139.5px);
+  }
+  .circle{
+    width: 367px;
+    height: 367px;
+  }
+  .circle__text{
+    top:50px;
+    left: 58px;
+    @include font($size: 8.5rem, $height: 6.4rem, $weight: 700);
+
+    //left: calc(50% - 400.25px/2 + 214.12px);
+  }
+}

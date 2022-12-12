@@ -6,11 +6,14 @@
   position: absolute;
   bottom: 0;
   right: 0;
+  max-width: 100%;
 }
 .pet__flower-left {
   position: absolute;
   bottom: 0;
   left: 0px;
+  max-width: 100%;
+
 }
 .pets__wrapper {
   max-width: 1324px;
@@ -20,21 +23,41 @@
 .pets-block {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+ // justify-content: space-between;
   align-items: center;
+  position: relative;
 }
 .arrow {
   width: 62px;
   height: 62px;
   background: $color-hover;
   border-radius: 50%;
-  transition: all 0.6s;
-  &:hover {
-    background: $color-submit;
-  }
+  position: relative;
+
+  display: inline-block;
+  & img{
+    position: relative;
+    z-index: 1;
+}
+&::after{
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background:$color-submit;
+  border-radius: 50%;
+  opacity: 0;
+  transition: opacity .6s;
+
+}
+   &:hover:after {
+    opacity: 1;
+}
 }
 .arrow-left {
-  position: relative;
+  position: absolute;
   & img {
     position: absolute;
     top: 45%;
@@ -43,6 +66,8 @@
 }
 .arrow-right {
   transform: rotate(180deg);
+  position: absolute;
+  right: 0;
   & img {
     position: absolute;
     top: 40%;
@@ -50,17 +75,17 @@
   }
 }
 .pet-block {
-  width: 1155px;
+  max-width: 1155px;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   flex-wrap: wrap;
   gap: 20px 30px;
   margin: 0 auto;
 }
 .about-pet {
   display: block;
-  width: 364px;
-  height: 427px;
+  max-width: 364px;
+  //height: 427px;
   border-radius: 5px;
   border: 1px solid transparent;
   //transition: transform 1s;
@@ -74,7 +99,7 @@
       display: flex;
       align-items: center;
       flex-direction: column;
-      margin-left: 90px;
+      margin: 0 auto;
       transition: transform 1s;
       transform: translatey(-200px); //translate(100px,-200px)
       color: $color-font-header;
@@ -88,12 +113,13 @@
 }
 .pet__img {
   overflow: hidden;
-  background: $background-header;
+  max-width: 366px;
+  width: 100%;
 }
 
 .pet__img img {
-  width: 362px;
-  height: 366px;
+  //width: 362px;
+  //height: 366px;
   border-radius: 5px 5px 0 0;
   transition: transform 1s;
   &:hover {
@@ -120,3 +146,46 @@
 .pets__button {
   margin: 80px auto 0 auto;
 }
+
+@media screen and (max-width: 1400px) {
+  .pets-block{
+    display: block;
+  }
+  .about-pet{
+    max-width:100%;
+  }
+  .pet-block{
+    gap:92px 20px;
+    }
+  .arrow-left{
+    top:46%;
+    left:37%;
+  }
+  .arrow-right{
+    top:46%;
+    left:58%;
+  }
+}
+@media screen and (max-width: 1300px) {
+  .pets__wrapper {
+    max-width: 1160px;
+  }
+.pet__img img{
+  overflow: hidden;
+  max-width: 295px;
+  width: 100%;
+  object-fit: cover;
+}
+.pet__flower-right img,.pet__flower-left img{
+width: 60%;
+}
+.pet__flower-right{
+  right: -150px;
+}
+}
+@media screen and (max-width: 950px) {
+  .about-pet:nth-child(5),.about-pet:nth-child(6){
+    display: none;
+  }
+}
+

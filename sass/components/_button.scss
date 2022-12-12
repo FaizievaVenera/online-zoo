@@ -1,5 +1,6 @@
 .button-link {
-  background: $color-hover;
+  background-color: #E47209;
+  background-image: $color-hover;
   width: 298px;
   height: 54px;
   display: flex;
@@ -7,12 +8,22 @@
   align-items: center;
   border-radius: 25px;
   cursor: pointer;
+  -ms-transition: all 1s ease-in-out;
+  -moz-transition: all 1s ease-in-out;
+  -o-transition: all 1s ease-in-out;
+  -webkit-transition: all 1s ease-in-out;
+  transition: all 1s ease-in-out;
+  &:hover{
+    background-image: none;
+  }
   & a {
     color: $color-font-header;
     text-align: center;
     text-transform: uppercase;
     @include font($size: 1.6rem, $height: 2.2rem, $weight: 500);
+
   }
+
 }
 
 .button-donate,
